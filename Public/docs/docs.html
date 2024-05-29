@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!--axios-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./docs.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand headline">Elsocket.top</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" data-bs-toggle="collapse" data-bs-target="#AboutCollapse">About <i class="bi bi-patch-exclamation"></i> </a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" data-bs-toggle="collapse" data-bs-target="#ConnectionCollapse">Connection <i class="bi bi-plugin"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#UsageCollapse">Usage <i class="bi bi-universal-access-circle"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#PricingCollapse">Pricing <i class="bi bi-currency-dollar"></i></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="section">
+        <div class="accordion " id="accordionExample">
+            <div class="accordion-item sectionMenu">
+                <div id="AboutCollapse" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h1>About <i class="bi bi-patch-exclamation"></i></h1>
+                    <br>
+                    <p1>This is a simple socket application that lets you connect and control your IOT Boards such as ESP8266, ESP32, Raspberry Pi series, and more,
+                        from anywhere without manually configuring your Wi-Fi router to be publically available, Just by using the telegram application.
+                        This Application Have both Free and paid socket Connectivity and also let your boards connect with Websocket and TCP Socket.<br>
+                        
+                    
+                    </p1>
+                    <div class="alert alert-danger" role="alert">
+                        <strong>NOTE:</strong> In case of any Service misuse, your telegram account can be permanently banned from using our services.
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="accordion-item sectionMenu">
+              <div id="ConnectionCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h1>Connection <i class="bi bi-plugin"></i></h1>
+                  <br>
+                  <h4 class="subheading">Admin : </h4>
+                  <ul>
+                    <li>Sign in to <a href="/">elsocket</a> with Google Account </li>
+                    <li>Open telegram  <a href="https://t.me/elsocket_bot?start=task_name">bot</a></li>
+                    <li>Paste your Admin token (From Dashboard) into the bot to connect</li>
+                    <li>Add the Client token into your IOT board </li>
+                  </ul>
+                  <br>
+
+                  <img src="https://res.cloudinary.com/dr0y2usoy/image/upload/v1716967984/Screenshot_2024-05-29_130220_xfeaap.png" class="helpImage">
+                  <br>
+                  
+                  <h4 class="subheading">Devices : </h4>
+                  <br>
+                  <h5>TCP : </h5>
+                  <ul>
+                    <li>Connect your IOT Board to 148.113.3.57 at port 3000</li>
+                    <li>Send Any Client token (From Dashboard) to server to verify device</li>
+                  </ul>
+                  <h5>WEBSOCKET : </h5>
+                  <ul>
+                    <li>Connect your IOT Board to 148.113.3.57 at port 8080</li>
+                    <li>Send Any Client token (From Dashboard) to server to verify device</li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item sectionMenu">
+              <div id="UsageCollapse" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <h1>Usage <i class="bi bi-universal-access-circle"></i></h1>
+                    <br>
+                    <h5>Bot Commands : </h5>
+                  <ul>
+                    <li><strong>/status</strong> : Get current Connection Status</li>
+                    <li><strong>/devices</strong> : List all Available Devices</li>
+                    <li><strong>/selected</strong> : Get Selected Device</li>
+                    <li><strong>/stop</strong> : Disconnect Current session</li>
+                    
+                  </ul>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item sectionMenu">
+              <div id="PricingCollapse" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <h1>Pricing <i class="bi bi-currency-dollar"></i></h1>
+                    <br>
+                    <div class="container">
+                      <div class="row row-centered">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <div class="card" >
+                            <img src="https://res.cloudinary.com/dr0y2usoy/image/upload/v1716964432/main_bg_paobp1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title title">Free</h5>
+                              <p>Devices (max) : <strong>3</strong></p>
+                              <p>Message Size (max) : <strong>40 Bytes</strong></p>
+                              <p>Plan Validity  : <strong>-- </strong></p>
+                              <p>Price : <strong>0 USD</strong></p>
+                              <a  class="btn btn-light buyNowButton" href="/" >Start</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <div class="card" >
+                            <img src="https://res.cloudinary.com/dr0y2usoy/image/upload/v1716964425/devices_bg_kchdaj.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title title">Basic</h5>
+                              <p>Devices (max) : <strong>5</strong></p>
+                              <p>Message Size (max) : <strong>70 Bytes</strong></p>
+                              <p>Plan Validity  : <strong>1 Month </strong></p>
+                              <p>Price : <strong>2 USD</strong></p>
+                              <a  class="btn btn-success buyNowButton" href="/" >Buy Now</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <div class="card" >
+                            <img src="https://res.cloudinary.com/dr0y2usoy/image/upload/v1716964425/command_bg_replll.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title title">Advanced</h5>
+                              <p>Devices (max) : <strong>10</strong></p>
+                              <p>Message Size (max) : <strong>100 Bytes</strong></p>
+                              <p>Plan Validity  : <strong>1 Month </strong></p>
+                              <p>Price : <strong>4 USD</strong></p>
+                              <a  class="btn btn-info buyNowButton" href="/" >Buy Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>

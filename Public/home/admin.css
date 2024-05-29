@@ -1,0 +1,47 @@
+.logoutButton{
+    margin-bottom: 20px !important;
+}
+
+.infoModal{
+    background-color: #2b3035 !important;
+}
+
+.LogsTitle{
+    text-align: center;
+    color: white;
+}
+
+.subHead{
+    background-color: #212529 !important;
+    color: white !important;
+    border-color: #212529 !important;
+}
+
+.dataInput{
+    background-color: #212529 !important;
+    color: white !important;
+    border-color: #212529 !important;
+}
+
+.adminsList{
+    overflow-y: auto;
+    max-height: 100px !important;
+}
+
+.allAdminTitle{
+    color: white;
+}
+
+.list-group-item{
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+.ban{
+    float: right !important;
+    color: red;
+}
+
+.ban:hover{
+    cursor: pointer;
+}

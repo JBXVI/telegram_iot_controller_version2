@@ -1,0 +1,87 @@
+body, html {
+    height: 100% !important;
+    color: white !important;
+    background-color: #212529 !important;
+}
+
+.headline{
+    font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.section{
+    padding: 20px !important;
+}
+.sectionMenu{
+    background-color: #2b3035 !important;
+}
+
+.alert{
+    margin-top: 18px;
+    width: fit-content !important;
+}
+
+.commands{
+    tab-size: 3;
+}
+
+
+.subheading{
+    font-size: 30px;
+}
+
+.card{
+    background-color: #212529 !important;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center !important;
+}
+
+.row-centered {
+    text-align: center;
+  }
+  
+  .row-centered .col-xs-12 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.title{
+    font-size: 28px;
+}
+
+.buyNowButton{
+    width: 100% !important;
+}
+
+.helpImage{
+    margin-bottom: 30px;
+    width: 400px;
+    height: 300px;
+}
+
+  
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar (for horizontal scroll) */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;  /* Hide the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;  /* Color of the scrollbar thumb */
+    border-radius: 10px;  /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* Color of the scrollbar thumb on hover */
+}   
